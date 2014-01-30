@@ -3,9 +3,9 @@
 # VERSION       0.42
 
 # use the base image provided by Docker
-FROM base
+FROM ubuntu:12.04
 
 MAINTAINER Moby Dock victor.coisne@docker.com
 
 # say hello when the container is launched
-ENTRYPOINT echo "Whale you be my container"
+CMD echo "Whale you be my container"

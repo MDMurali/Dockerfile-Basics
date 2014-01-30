@@ -3,7 +3,7 @@
 # VERSION       1.0
 
 # use the ubuntu base image provided by Docker
-FROM ubuntu
+FROM ubuntu:12.04
 
 MAINTAINER Julien, julien@docker.com
 

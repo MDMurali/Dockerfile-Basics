@@ -3,9 +3,9 @@
 # VERSION 0.42 
 
 # use the base image provided by Docker
-FROM base 
+FROM ubuntu:12.04 
 
 MAINTAINER Roberto Roberto@docker.com 
 
 # count lines with wc 
-ENTRYPOINT ["wc", "-l"]
+CMD ["wc", "-l"]

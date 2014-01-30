@@ -3,7 +3,7 @@
 # VERSION       42
 
 # use the ubuntu base image provided by Docker
-FROM ubuntu
+FROM ubuntu:12.04
 
 MAINTAINER Julien Barbier write0@gmail.com
 
@@ -15,7 +15,7 @@ RUN apt-get update
 RUN apt-get install -y memcached
 
 # Launch memcached when launching the container
-ENTRYPOINT ["memcached"]
+CMD ["memcached"]
 
 # run memcached as the daemon user
 USER daemon
